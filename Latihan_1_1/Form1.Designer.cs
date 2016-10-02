@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.MaxTahun = new System.Windows.Forms.Label();
+            this.MinTahun = new System.Windows.Forms.Label();
             this.Value2 = new System.Windows.Forms.Label();
             this.Value1 = new System.Windows.Forms.Label();
             this.Max = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.Date = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.MinTahun = new System.Windows.Forms.Label();
-            this.MaxTahun = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,24 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // MaxTahun
+            // 
+            this.MaxTahun.AutoSize = true;
+            this.MaxTahun.Location = new System.Drawing.Point(137, 12);
+            this.MaxTahun.Name = "MaxTahun";
+            this.MaxTahun.Size = new System.Drawing.Size(97, 13);
+            this.MaxTahun.TabIndex = 8;
+            this.MaxTahun.Text = "Max Tahun = 2016";
+            // 
+            // MinTahun
+            // 
+            this.MinTahun.AutoSize = true;
+            this.MinTahun.Location = new System.Drawing.Point(15, 12);
+            this.MinTahun.Name = "MinTahun";
+            this.MinTahun.Size = new System.Drawing.Size(94, 13);
+            this.MinTahun.TabIndex = 7;
+            this.MinTahun.Text = "Min Tahun = 2016";
             // 
             // Value2
             // 
@@ -157,24 +175,6 @@
             this.imageList1.Images.SetKeyName(0, "200 (1).gif");
             this.imageList1.Images.SetKeyName(1, "200 (2).gif");
             // 
-            // MinTahun
-            // 
-            this.MinTahun.AutoSize = true;
-            this.MinTahun.Location = new System.Drawing.Point(15, 12);
-            this.MinTahun.Name = "MinTahun";
-            this.MinTahun.Size = new System.Drawing.Size(94, 13);
-            this.MinTahun.TabIndex = 7;
-            this.MinTahun.Text = "Min Tahun = 2016";
-            // 
-            // MaxTahun
-            // 
-            this.MaxTahun.AutoSize = true;
-            this.MaxTahun.Location = new System.Drawing.Point(137, 12);
-            this.MaxTahun.Name = "MaxTahun";
-            this.MaxTahun.Size = new System.Drawing.Size(97, 13);
-            this.MaxTahun.TabIndex = 8;
-            this.MaxTahun.Text = "Max Tahun = 2016";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,7 +182,7 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Latihan_1_1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

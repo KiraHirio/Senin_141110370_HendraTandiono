@@ -24,8 +24,12 @@ namespace Latihan_1_1
                 Max.Text = "Max = " + Scroll2.Value.ToString();
                 MinTahun.Text = "Min Tahun = " + (2016 - Scroll1.Value).ToString();
                 MaxTahun.Text = "Max Tahun = " + (2016 + Scroll2.Value).ToString();
+                /*
                 Date.MinDate = Convert.ToDateTime("01/01/" + (2016 - Scroll1.Value).ToString());
                 Date.MaxDate = Convert.ToDateTime("01/01/" + (2016 + Scroll2.Value).ToString());
+                */
+                Date.MinDate = DateTime.Today.AddYears(-Scroll1.Value);
+                Date.MaxDate = DateTime.Today.AddYears(Scroll2.Value);
             }
             else
             {
@@ -33,8 +37,12 @@ namespace Latihan_1_1
                 Max.Text = "Max = " + Scroll1.Value.ToString();
                 MinTahun.Text = "Min Tahun = " + (2016 - Scroll2.Value).ToString();
                 MaxTahun.Text = "Max Tahun = " + (2016 + Scroll1.Value).ToString();
+                /*
                 Date.MinDate = Convert.ToDateTime("01/01/" + (2016 - Scroll2.Value).ToString());
                 Date.MaxDate = Convert.ToDateTime("01/01/" + (2016 + Scroll1.Value).ToString());
+                */
+                Date.MinDate = DateTime.Today.AddYears(-Scroll2.Value);
+                Date.MaxDate = DateTime.Today.AddYears(Scroll1.Value);
             }
         }
 

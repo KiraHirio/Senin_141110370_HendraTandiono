@@ -16,5 +16,37 @@ namespace Latihan_1_1
         {
             InitializeComponent();
         }
+        private void Change_0()
+        {
+            if (Scroll1.Value <= Scroll2.Value)
+            {
+                Min.Text = "Min = " + Scroll1.Value.ToString();
+                Max.Text = "Max = " + Scroll2.Value.ToString();
+                MinTahun.Text = "Min Tahun = " + (2016 - Scroll1.Value).ToString();
+                MaxTahun.Text = "Max Tahun = " + (2016 + Scroll2.Value).ToString();
+                Date.MinDate = Convert.ToDateTime("01/01/" + (2016 - Scroll1.Value).ToString());
+                Date.MaxDate = Convert.ToDateTime("01/01/" + (2016 + Scroll2.Value).ToString());
+            }
+            else
+            {
+                Min.Text = "Min = " + Scroll2.Value.ToString();
+                Max.Text = "Max = " + Scroll1.Value.ToString();
+                MinTahun.Text = "Min Tahun = " + (2016 - Scroll2.Value).ToString();
+                MaxTahun.Text = "Max Tahun = " + (2016 + Scroll1.Value).ToString();
+                Date.MinDate = Convert.ToDateTime("01/01/" + (2016 - Scroll2.Value).ToString());
+                Date.MaxDate = Convert.ToDateTime("01/01/" + (2016 + Scroll1.Value).ToString());
+            }
+        }
+
+        private void Change_1(object sender, ScrollEventArgs e)
+        {
+            Value1.Text = "Value Scroll 1 = " + Scroll1.Value.ToString();
+            Change_0();
+        }
+        private void Change_2(object sender, ScrollEventArgs e)
+        {
+            Value2.Text = "Value Scroll 2 = " + Scroll2.Value.ToString();
+            Change_0();
+        }
     }
 }

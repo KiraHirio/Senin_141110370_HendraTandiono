@@ -40,14 +40,18 @@ namespace Latihan_2_1
         }
         public void boldme()
         {
+            bool Feb = true;
             DateTime DT1 = MC1.SelectionStart.AddMonths(-4);
             DateTime DT2 = MC1.SelectionStart.AddMonths(4);
             string Day1 = "01", Month1 = DT1.Month.ToString(), Year1 = DT1.Year.ToString(),
                    Day2 = ""  , Month2 = DT2.Month.ToString(), Year2 = DT2.Year.ToString();
 
+            if (DT2.Year % 100 != 0 && DT2.Year % 4 == 0 && DT2.Year % 400 == 0) { Feb = false; }
+
             for(int i = 1; i <= 12 ; i++ ){if (DT2.Month == i){
                if (i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12) { Day2 = "31"; }
-               else if (i == 2) { Day2 = "28"; } else { Day2 = "30"; } break;
+               else if (i == 2 && Feb) { Day2 = "28"; } else if (i == 2) { Day2 = "29"; }
+               else { Day2 = "30"; } break;
             }  }
 
             DateTime Date1 = Convert.ToDateTime(Month1+"/"+Day1+"/"+Year1);
@@ -63,6 +67,7 @@ namespace Latihan_2_1
 
         private void Reset(object sender, EventArgs e)
         {
+            if (UD2.SelectedIndex == -1) { MessageBox.Show("Please Choose Month Before Un-Bold The Date"); return; }
             string Day0 = UD1.Value.ToString(), Month0 = (UD2.SelectedIndex + 1).ToString(), Year0 = DateTime.Today.Year.ToString();
             DateTime Date0 = Convert.ToDateTime(Month0 + "/" + Day0 + "/" + Year0);
             MC1.RemoveAnnuallyBoldedDate(Date0);

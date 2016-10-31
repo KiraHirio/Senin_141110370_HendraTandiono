@@ -67,6 +67,10 @@ namespace Latihan_2_1
 
         private void Reset(object sender, EventArgs e)
         {
+            DateTime DT1 = MC1.SelectionRange.Start;
+            DateTime DT2 = MC1.SelectionRange.End;
+            while (DT1 <= DT2) { MC1.RemoveBoldedDate(DT1); DT1 = DT1.AddDays(1);}
+
             if (UD2.SelectedIndex == -1) { MessageBox.Show("Please Choose Month Before Un-Bold The Date"); return; }
             string Day0 = UD1.Value.ToString(), Month0 = (UD2.SelectedIndex + 1).ToString(), Year0 = DateTime.Today.Year.ToString();
             DateTime Date0 = Convert.ToDateTime(Month0 + "/" + Day0 + "/" + Year0);
@@ -80,6 +84,19 @@ namespace Latihan_2_1
             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 8 || i == 10 || i == 12){ UD1.Maximum = 31; }
             else if(i == 2 ){ UD1.Maximum = 29;}
             else {UD1.Maximum = 30;}
+        }
+
+        private void Messageme(object sender, DateRangeEventArgs e)
+        {
+
+            if (MC1.SelectionStart.DayOfWeek == DayOfWeek.Sunday)
+            {
+                MessageBox.Show("Hari Libur");
+            }
+            else
+            {
+                MessageBox.Show("Bukan Hari Libur");
+            }
         }
      }
 }

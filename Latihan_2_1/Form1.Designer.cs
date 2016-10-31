@@ -43,8 +43,10 @@
             this.MC1.Location = new System.Drawing.Point(18, 114);
             this.MC1.MaxSelectionCount = 3;
             this.MC1.Name = "MC1";
+            this.MC1.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2016, 12, 4, 0, 0, 0, 0), new System.DateTime(2016, 12, 6, 0, 0, 0, 0));
             this.MC1.TabIndex = 0;
             this.MC1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.ChangeBold);
+            this.MC1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.Messageme);
             // 
             // button1
             // 

@@ -1,7 +1,6 @@
 C:\Users\Kira Hirio\documents\visual studio 2013\Projects\Senin_141110370_HendraTandiono\Latihan_3_1\bin\Debug\Latihan_3_1.exe.config
 C:\Users\Kira Hirio\documents\visual studio 2013\Projects\Senin_141110370_HendraTandiono\Latihan_3_1\bin\Debug\Latihan_3_1.exe
 C:\Users\Kira Hirio\documents\visual studio 2013\Projects\Senin_141110370_HendraTandiono\Latihan_3_1\bin\Debug\Latihan_3_1.pdb
-C:\Users\Kira Hirio\documents\visual studio 2013\Projects\Senin_141110370_HendraTandiono\Latihan_3_1\obj\Debug\Latihan_3_1.csprojResolveAssemblyReference.cache
 C:\Users\Kira Hirio\documents\visual studio 2013\Projects\Senin_141110370_HendraTandiono\Latihan_3_1\obj\Debug\Latihan_3_1.Form1.resources
 C:\Users\Kira Hirio\documents\visual studio 2013\Projects\Senin_141110370_HendraTandiono\Latihan_3_1\obj\Debug\Latihan_3_1.Properties.Resources.resources
 C:\Users\Kira Hirio\documents\visual studio 2013\Projects\Senin_141110370_HendraTandiono\Latihan_3_1\obj\Debug\Latihan_3_1.csproj.GenerateResource.Cache

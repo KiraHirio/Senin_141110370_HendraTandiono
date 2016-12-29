@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DBS_POS.Properties {
+namespace Latihan_Pos.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,10 +26,10 @@ namespace DBS_POS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=dbspos")]
-        public string dbsposConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;database=\"aerial world\"")]
+        public string Conset {
             get {
-                return ((string)(this["dbsposConnectionString"]));
+                return ((string)(this["Conset"]));
             }
         }
     }

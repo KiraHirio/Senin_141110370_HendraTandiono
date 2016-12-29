@@ -30,24 +30,24 @@
         {
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.File = new System.Windows.Forms.ToolStripMenuItem();
-            this.Registrasi = new System.Windows.Forms.ToolStripMenuItem();
-            this.Transaksi = new System.Windows.Forms.ToolStripMenuItem();
-            this.Laporan = new System.Windows.Forms.ToolStripMenuItem();
-            this.Utility = new System.Windows.Forms.ToolStripMenuItem();
             this.Exit = new System.Windows.Forms.ToolStripMenuItem();
-            this.RegGroup = new System.Windows.Forms.ToolStripMenuItem();
-            this.RegBarang = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.Registrasi = new System.Windows.Forms.ToolStripMenuItem();
             this.RegCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.RegSupplier = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.RegBarang = new System.Windows.Forms.ToolStripMenuItem();
+            this.RegGroup = new System.Windows.Forms.ToolStripMenuItem();
             this.RegPerkiraan = new System.Windows.Forms.ToolStripMenuItem();
+            this.Transaksi = new System.Windows.Forms.ToolStripMenuItem();
             this.TransaksiJual = new System.Windows.Forms.ToolStripMenuItem();
             this.TransaksiBeli = new System.Windows.Forms.ToolStripMenuItem();
             this.TransaksiPakai = new System.Windows.Forms.ToolStripMenuItem();
             this.TransaksiOlah = new System.Windows.Forms.ToolStripMenuItem();
             this.TransaksiPenyesuaian = new System.Windows.Forms.ToolStripMenuItem();
+            this.Laporan = new System.Windows.Forms.ToolStripMenuItem();
             this.LaporanJual = new System.Windows.Forms.ToolStripMenuItem();
             this.LaporanBeli = new System.Windows.Forms.ToolStripMenuItem();
+            this.Utility = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.Menu.Size = new System.Drawing.Size(664, 24);
+            this.Menu.Size = new System.Drawing.Size(784, 24);
             this.Menu.TabIndex = 0;
             // 
             // File
@@ -73,6 +73,13 @@
             this.File.Name = "File";
             this.File.Size = new System.Drawing.Size(39, 20);
             this.File.Text = "&File";
+            // 
+            // Exit
+            // 
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(152, 22);
+            this.Exit.Text = "&Exit";
+            this.Exit.Click += new System.EventHandler(this.Close);
             // 
             // Registrasi
             // 
@@ -86,60 +93,6 @@
             this.Registrasi.Name = "Registrasi";
             this.Registrasi.Size = new System.Drawing.Size(76, 20);
             this.Registrasi.Text = "&Registrasi";
-            // 
-            // Transaksi
-            // 
-            this.Transaksi.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TransaksiJual,
-            this.TransaksiBeli,
-            this.TransaksiPakai,
-            this.TransaksiOlah,
-            this.TransaksiPenyesuaian});
-            this.Transaksi.Name = "Transaksi";
-            this.Transaksi.Size = new System.Drawing.Size(74, 20);
-            this.Transaksi.Text = "&Transaksi";
-            // 
-            // Laporan
-            // 
-            this.Laporan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LaporanJual,
-            this.LaporanBeli});
-            this.Laporan.Name = "Laporan";
-            this.Laporan.Size = new System.Drawing.Size(65, 20);
-            this.Laporan.Text = "&Laporan";
-            // 
-            // Utility
-            // 
-            this.Utility.Name = "Utility";
-            this.Utility.Size = new System.Drawing.Size(48, 20);
-            this.Utility.Text = "&Utility";
-            this.Utility.Visible = false;
-            // 
-            // Exit
-            // 
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(152, 22);
-            this.Exit.Text = "&Exit";
-            this.Exit.Click += new System.EventHandler(this.Close);
-            // 
-            // RegGroup
-            // 
-            this.RegGroup.Name = "RegGroup";
-            this.RegGroup.Size = new System.Drawing.Size(152, 22);
-            this.RegGroup.Text = "&Group Barang";
-            this.RegGroup.Visible = false;
-            // 
-            // RegBarang
-            // 
-            this.RegBarang.Name = "RegBarang";
-            this.RegBarang.Size = new System.Drawing.Size(152, 22);
-            this.RegBarang.Text = "&Barang";
-            this.RegBarang.Click += new System.EventHandler(this.RegBarang_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // RegCustomer
             // 
@@ -155,12 +108,44 @@
             this.RegSupplier.Text = "&Supplier";
             this.RegSupplier.Click += new System.EventHandler(this.RegSupplier_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // RegBarang
+            // 
+            this.RegBarang.Name = "RegBarang";
+            this.RegBarang.Size = new System.Drawing.Size(152, 22);
+            this.RegBarang.Text = "&Barang";
+            this.RegBarang.Click += new System.EventHandler(this.RegBarang_Click);
+            // 
+            // RegGroup
+            // 
+            this.RegGroup.Name = "RegGroup";
+            this.RegGroup.Size = new System.Drawing.Size(152, 22);
+            this.RegGroup.Text = "&Group Barang";
+            this.RegGroup.Visible = false;
+            // 
             // RegPerkiraan
             // 
             this.RegPerkiraan.Name = "RegPerkiraan";
             this.RegPerkiraan.Size = new System.Drawing.Size(152, 22);
             this.RegPerkiraan.Text = "&Perkiraan";
             this.RegPerkiraan.Visible = false;
+            // 
+            // Transaksi
+            // 
+            this.Transaksi.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TransaksiJual,
+            this.TransaksiBeli,
+            this.TransaksiPakai,
+            this.TransaksiOlah,
+            this.TransaksiPenyesuaian});
+            this.Transaksi.Enabled = false;
+            this.Transaksi.Name = "Transaksi";
+            this.Transaksi.Size = new System.Drawing.Size(74, 20);
+            this.Transaksi.Text = "&Transaksi";
             // 
             // TransaksiJual
             // 
@@ -195,6 +180,16 @@
             this.TransaksiPenyesuaian.Text = "Pen&yesuaian Stock";
             this.TransaksiPenyesuaian.Visible = false;
             // 
+            // Laporan
+            // 
+            this.Laporan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LaporanJual,
+            this.LaporanBeli});
+            this.Laporan.Enabled = false;
+            this.Laporan.Name = "Laporan";
+            this.Laporan.Size = new System.Drawing.Size(65, 20);
+            this.Laporan.Text = "&Laporan";
+            // 
             // LaporanJual
             // 
             this.LaporanJual.Name = "LaporanJual";
@@ -207,11 +202,18 @@
             this.LaporanBeli.Size = new System.Drawing.Size(152, 22);
             this.LaporanBeli.Text = "Pem&belian";
             // 
+            // Utility
+            // 
+            this.Utility.Name = "Utility";
+            this.Utility.Size = new System.Drawing.Size(48, 20);
+            this.Utility.Text = "&Utility";
+            this.Utility.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 441);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.Menu);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.MainMenuStrip = this.Menu;
@@ -219,6 +221,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DBS Point of Sale";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             this.ResumeLayout(false);
